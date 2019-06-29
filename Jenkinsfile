@@ -6,6 +6,6 @@ node('maven-build-agent'){
     }
     stage ('build'){
         echo "build the package"
-        sh "${mvnHome}/bin/mvn package -DskipTests=true"
+        sh "${mvnHome}/mvn package -DskipTests=true"
     }
 }
