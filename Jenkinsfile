@@ -1,5 +1,5 @@
 properties([pipelineTriggers([githubPush()])])
-node('maven-build-agent'){
+node('master'){
     def mvnHome = tool name: 'maven360', type: 'maven'
     echo "downloading....scm"
     stage('checkout'){
