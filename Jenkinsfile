@@ -10,5 +10,6 @@ node('master'){
         echo "build the package"
         //sh "${mvnHome}/mvn package -DskipTests=true"
         sh "ls -latr"
+        sh "cat Jenkinsfile"
     }
 }
