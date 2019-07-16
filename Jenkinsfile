@@ -9,5 +9,6 @@ node('master'){
     stage ('build'){
         echo "build the package"
         //sh "${mvnHome}/mvn package -DskipTests=true"
+        sh "ls -latr"
     }
 }
