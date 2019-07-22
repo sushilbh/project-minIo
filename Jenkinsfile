@@ -2,7 +2,7 @@ properties([pipelineTriggers([githubPush()])])
 node('master'){
     //def mvnHome = tool name: 'maven360', type: 'maven'
     echo "downloading..scm"
-    echo "Testing smee...!!"
+    echo "Testing smee........!!"
     stage('checkout'){
         git credentialsId: 'githubacc', url: 'https://github.com/sushilbh/project-minIo.git'
     }
